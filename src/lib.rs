@@ -15,22 +15,22 @@ impl MirageTank {
     }
 
     #[wasm_bindgen(getter)]
-    pub fn wimage_width(&self)-> u32 {
+    pub fn wimage_width(&self) -> u32 {
         self.inner.wimage_size().0
     }
 
     #[wasm_bindgen(getter)]
-    pub fn wimage_height(&self)->u32{
+    pub fn wimage_height(&self) -> u32 {
         self.inner.wimage_size().1
     }
 
     #[wasm_bindgen(getter)]
-    pub fn bimage_width(&self)-> u32 {
+    pub fn bimage_width(&self) -> u32 {
         self.inner.bimage_size().0
     }
-    
+
     #[wasm_bindgen(getter)]
-    pub fn bimage_height(&self)->u32{
+    pub fn bimage_height(&self) -> u32 {
         self.inner.bimage_size().1
     }
 }
